@@ -32,21 +32,13 @@
 - git commit -m "Fecha"
 
 ## 9.
-- Se creó el archivo en el vsc
-
-- git status
-- On branch master
-- Untracked files:
--    (use "git add <file>..." tu include in what will be committed)
--         index.html
-
-- nothing added to commit but untracked files present (use "git add" to track)
+### Se creó el archivo index.html en el vsc
 
 - git add index.html
 - git commit -m "archivo index"
 
 ## 10.
-### Creé un repositorio en GitHub y conecté mi repositorio local con el de GitHub
+### Se creó un repositorio en GitHub y se conectó el repositorio local con el de GitHub
 - git remote add origin https://github.com/MaEugeniaB/AprendiendoGit.git
 
 ### Subí los archivos a GitHub
