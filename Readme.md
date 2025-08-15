@@ -1,79 +1,57 @@
-Git Fundamentos
+# Repositorio de María Eugenia Bava
+#
+# Git Fundamentos
 %date%
 
-Comandos utilizados
-
-
-Eugenia@DESKTOP-A289U58 MINGW64 ~/Desktop (main)
-$ ^[[200~mkdir AprendiendoGit
+## Comandos utilizados
+## Consignas:
+## 2.
+mkdir AprendiendoGit
+cd AprendiendoGit
 git init
-bash: $'\E[200~mkdir': command not found
+dir
 
-Eugenia@DESKTOP-A289U58 MINGW64 ~/Desktop (main)
-$ mkdir AprendiendoGit
+## 3.
+echo Git Fundamentos > Readme.md
 
-Eugenia@DESKTOP-A289U58 MINGW64 ~/Desktop (main)
-$ cd AprendiendoGit
+## 4.
+git status
 
-Eugenia@DESKTOP-A289U58 MINGW64 ~/Desktop/AprendiendoGit (main)
-$ git init
-Initialized empty Git repository in C:/Users/Eugenia/Desktop/AprendiendoGit/.git/
+## 5.
+git add Readme.md
 
-Eugenia@DESKTOP-A289U58 MINGW64 ~/Desktop/AprendiendoGit (master)
-$ dir
+## 6.
+git status
 
-Eugenia@DESKTOP-A289U58 MINGW64 ~/Desktop/AprendiendoGit (master)
-$ echo Git Fundamentos > Readme.md
+## 7.
+code .
 
-Eugenia@DESKTOP-A289U58 MINGW64 ~/Desktop/AprendiendoGit (master)
-$ git status
-On branch master
+## 8.
+echo %date% >> Readme.md
+git add Readme.md
+git commit -m "Fecha"
 
-No commits yet
+## 9.
+Se creó el archivo en el vsc
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        Readme.md
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-Eugenia@DESKTOP-A289U58 MINGW64 ~/Desktop/AprendiendoGit (master)
-$ git add Readme.md
-warning: in the working copy of 'Readme.md', LF will be replaced by CRLF the next time Git touches it
-
-Eugenia@DESKTOP-A289U58 MINGW64 ~/Desktop/AprendiendoGit (master)
-$ git status
-On branch master
-
-No commits yet
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-        new file:   Readme.md
-
-
-Eugenia@DESKTOP-A289U58 MINGW64 ~/Desktop/AprendiendoGit (master)
-$ code .
-To read from stdin, append '-' (e.g. 'echo Hello World | code -')
-
-Eugenia@DESKTOP-A289U58 MINGW64 ~/Desktop/AprendiendoGit (master)
-$ echo %date% >> Readme.md
-
-Eugenia@DESKTOP-A289U58 MINGW64 ~/Desktop/AprendiendoGit (master)
-$ git add Readme.md
-warning: in the working copy of 'Readme.md', LF will be replaced by CRLF the next time Git touches it
-
-Eugenia@DESKTOP-A289U58 MINGW64 ~/Desktop/AprendiendoGit (master)
-$ git commit -m "Fecha"
-[master (root-commit) 6f58ed3] Fecha
- 1 file changed, 2 insertions(+)
- create mode 100644 Readme.md
-
-$ git status
+git status
 On branch master
 Untracked files:
    (use "git add <file>..." tu include in what will be committed)
         index.html
 
 nothing added to commit but untracked files present (use "git add" to track)
+
+git add index.html
+git commit -m "archivo index"
+
+## 10.
+Creé un repositorio en GitHub y conecté mi repositorio local con el de GitHub
+git remote add origin https://github.com/MaEugeniaB/AprendiendoGit.git
+
+Subí los archivos a GitHub
+git add .
+git commit -m "Primera actividad"
+git push -u origin master
+
 
